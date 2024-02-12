@@ -9,5 +9,5 @@ const URL= "https://d4achury.github.io"
 export default defineConfig({
   integrations: [tailwind()],
   site: URL,
-  base: '/d4achury.dev',
+  base: '/dachury.dev',
 });

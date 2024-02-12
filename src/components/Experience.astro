@@ -1,0 +1,38 @@
+---
+    import ExperienceItem from "./ExperienceItem.astro";
+
+    const EXPERIENCE = [
+        {
+            date: 'Feb. 2021 - Presente',
+            title: 'Blossom - QA',
+            description: `Desarrollo de pruebas Automatizacíon E2E e Integration. 
+                          Diseño de estatregias de CI/CD con github.
+                          Desarrollo de APIS en un stack de nodejs, TypeScript y Apollo Graphql.
+                          Conociminetos en Bases de Datos PostgreSQL, Mysql y lenguaje SQL.
+                          Conocimientos en React JS, HTML, CSS, Tailwind CSS.`,
+            link: '#'
+        },
+        {
+            date: 'Ago. 2021 - Feb. 2023',
+            title: 'HelloBUILD - Senior QA Automation Engineer',
+            description: 'Diseño y Desarrollo de casos de pruebas BDD enfocado a pruebas end to end.',
+            link: '#'
+        },
+        {
+            date: 'Oct. 2016 - Feb. 2020',
+            title: 'Cyxtera Technologiesoct - Software Testing',
+            description: `Desarrollo de proyectos de automatización
+                         con tecnologías como Java, Selenium, cucumber. 
+                         Desarrollo de proyectos bajo la metodología BDD enfocado a pruebas E2E.`,
+            link: '#'
+        }
+    ]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {EXPERIENCE.map(experience => (
+    <li class="mb-10 ms-4 mt-4">
+        <ExperienceItem {...experience} />
+    </li>
+    ))}
+</ol>
